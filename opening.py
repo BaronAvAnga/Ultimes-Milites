@@ -15,5 +15,11 @@ print("\n")
 print("--------------------------------------------------------------------------------")
 print("\n")
 centurionname = input("Enter Player Name: ")
-print("\nGreetings, Centurion", centurionname)
+while True:
+    if len(centurionname) < 1:
+        centurionname = input("Re-Enter Player Name: ")
+        continue 
+    else:
+        print("\nGreetings, Centurion", centurionname)
+    break
 
